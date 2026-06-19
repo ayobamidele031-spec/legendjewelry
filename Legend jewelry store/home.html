@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Jewelry Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <h1>Legend Jewelry Store</h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search products, brands and categories">
+            <button>Search</button>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Premium Jewelry Collection</h2>
+
+            <p>
+                Discover elegant rings, necklaces,
+                bracelets, earrings and watches at
+                affordable prices.
+            </p>
+
+            <a href="product.html" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+    <a href="rings.html" class="category-link">
+        <div class="category-card">
+            <img src="images/rings.jpg" alt="Ring">
+            <h3>Rings</h3>
+        </div>
+    </a>
+
+    <a href="necklaces.html" class="category-link">
+        <div class="category-card">
+            <img src="images/necklaces.jpg" alt="Necklace">
+            <h3>Necklaces</h3>
+        </div>
+    </a>
+
+    <a href="earrings.html" class="category-link">
+        <div class="category-card">
+            <img src="images/earring.jpg" alt="Earring">
+            <h3>Earrings</h3>
+        </div>
+    </a>
+
+    <a href="bracelets.html" class="category-link">
+        <div class="category-card">
+            <img src="images/bracelet.jpg" alt="Bracelet">
+            <h3>Bracelets</h3>
+        </div>
+    </a>
+
+    <a href="watches.html" class="category-link">
+        <div class="category-card">
+            <img src="images/watches.jpg" alt="Watch">
+            <h3>Watches</h3>
+        </div>
+    </a>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+<section class="featured-products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <!-- PRODUCT 1 -->
+        <a href="rings product1.html" class="product-link">
+            <div class="product-card">
+
+                <span class="discount">-20%</span>
+
+                <img src="images/Diamond rings.jpg" alt="Diamond Ring">
+
+                <h3>Diamond Ring</h3>
+
+                <div class="price-box">
+                    <p class="new-price">₦25,000</p>
+                    <p class="old-price">₦30,000</p>
+                </div>
+
+                <button onclick="event.preventDefault(); addToCart('Diamond Ring',25000)">
+    Add to Cart
+</button>
+
+            </div>
+        </a>
+
+        <!-- PRODUCT 2 -->
+        <a href="necklace product1.html" class="product-link">
+            <div class="product-card">
+
+                <span class="discount">-20%</span>
+
+                <img src="images/necklaces.jpg" alt="Necklace">
+
+                <h3>Necklace</h3>
+
+                <div class="price-box">
+                    <p class="new-price">₦25,000</p>
+                    <p class="old-price">₦30,000</p>
+                </div>
+
+                <button onclick="event.preventDefault(); addToCart('Necklace',25000)">
+    Add to Cart
+</button>
+
+            </div>
+        </a>
+
+        <!-- PRODUCT 3 -->
+        <a href="watch product2.html" class="product-link">
+            <div class="product-card">
+
+                <span class="discount">-20%</span>
+
+                <img src="images/Luxury Watch.jpg" alt="Luxury Watch">
+
+                <h3>Diamond Watch</h3>
+
+                <div class="price-box">
+                    <p class="new-price">₦25,000</p>
+                    <p class="old-price">₦30,000</p>
+                </div>
+
+                <button onclick="event.preventDefault(); addToCart('Diamond Watch',25000)">
+    Add to Cart
+</button>
+
+            </div>
+        </a>
+
+        <!-- PRODUCT 4 -->
+        <a href="earring product.html" class="product-link">
+            <div class="product-card">
+
+                <img src="images/earring.jpg" alt="Earring">
+
+                <h3>Rolex Earring</h3>
+
+                <div class="price-box">
+                    <p class="new-price">₦25,000</p>
+                    <p class="old-price">₦30,000</p>
+                </div>
+
+                <button onclick="event.preventDefault(); addToCart('Rolex Earring',25000)">
+    Add to Cart
+</button>
+
+            </div>
+        </a>
+ <!-- PRODUCT 2 -->
+
+        <a href="watch product2.html" class="product-link">
+
+            <div class="product-card">
+
+                <img src="images/Luxury Watch.jpg" alt="Gold Necklace">
+
+                <h3>Rolex Wrist watch</h3>
+
+                <div class="price-box">
+                    <p class="new-price">₦50,000</p>
+                    <p class="old-price">₦45,000</p>
+                </div>
+
+                <button onclick="event.preventDefault(); addToCart('Rolex wrist watch',25000)">
+    Add to Cart
+</button>
+
+            </div>
+
+        </a>
+         <a href="rings product2.html" class="product-link">
+<div class="product-card">
+
+            <img src="images/rings.jpg">
+
+            <h3>High fashion ring</h3>
+
+            <div class="price-box">
+                <p class="new-price">₦35,000</p>
+                <p class="old-price">₦25,000</p>
+            </div>
+
+            <button onclick="event.preventDefault(); addToCart('High fashion ring',25000)">
+    Add to Cart
+</button>
+
+        </div>
+        <a href="necklace product2.html" class="product-link">
+
+            <div class="product-card">
+
+                <img src="images/Gold Necklace.jpg" alt="Gold Necklace">
+
+                <h3>Gold Necklace</h3>
+
+                <div class="price-box">
+                    <p class="new-price">₦15,000</p>
+                    <p class="old-price">₦12,000</p>
+                </div>
+
+                <button onclick="event.preventDefault(); addToCart('Gold necklace',25000)">
+    Add to Cart
+</button>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Legend Jewelry Store</h3>
+            <p>
+                Your trusted destination for premium rings,
+                necklaces, bracelets, earrings, and luxury watches.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>📍 Okitipupa, ondo state, Nigeria</p>
+            <p>📞 +234 903 314 0629</p>
+            <p>✉ info@ayobamidele031.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Legend Jewelry Store. All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+<script src="js/app.js"></script>
+</body>
+
+</html>

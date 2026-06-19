@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings - Legend Jewelry Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Legend Jewelry Store</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+</header>
+
+<section class="all-products">
+
+  <h2>Rings Collection</h2>
+
+<div class="all-product-grid">
+
+    <!-- Ring 1 -->
+    <a href="rings product1.html" class="product-link">
+        <div class="product-card">
+
+            <img src="images/Diamond rings.jpg" alt="Diamond Ring">
+
+            <h3>Diamond Ring</h3>
+
+            <div class="price-box">
+                <p class="new-price">₦25,000</p>
+                <p class="old-price">₦30,000</p>
+            </div>
+
+            <button onclick="event.preventDefault(); addToCart('Diamond Ring',25000)">
+                Add to Cart
+            </button>
+
+        </div>
+    </a>
+
+    <!-- Ring 2 -->
+    <a href="rings product2.html" class="product-link">
+        <div class="product-card">
+
+            <img src="images/rings.jpg" alt="High Fashion Ring">
+
+            <h3>High Fashion Ring</h3>
+
+            <div class="price-box">
+                <p class="new-price">₦35,000</p>
+                <p class="old-price">₦25,000</p>
+            </div>
+
+            <button onclick="event.preventDefault(); addToCart('High Fashion Ring',35000)">
+                Add to Cart
+            </button>
+
+        </div>
+    </a>
+
+</div>
+        <!-- Add more ring products here -->
+
+    </div>
+
+</section>
+<script src="js/app.js"></script>
+</body>
+</html>

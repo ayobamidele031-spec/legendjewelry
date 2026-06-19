@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - Legend Jewelry Store</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="checkout-header">
+
+    <h1>Legend Jewelry Store</h1>
+
+    <a href="cart.html">← Back to Cart</a>
+
+</header>
+
+<section class="checkout-container">
+
+    <!-- SHIPPING DETAILS -->
+
+    <div class="shipping-section">
+
+        <h2>Shipping Information</h2>
+
+        <form id="checkoutForm">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <input type="text" placeholder="State" required>
+
+            <input type="text" placeholder="City" required>
+
+            <textarea placeholder="Delivery Address" required></textarea>
+
+            <select required>
+
+                <option value="">
+                    Select Payment Method
+                </option>
+
+                <option>Debit Card</option>
+
+                <option>Bank Transfer</option>
+
+                <option>Cash On Delivery</option>
+
+            </select>
+
+        </form>
+
+    </div>
+
+    <!-- ORDER SUMMARY -->
+
+    <div class="summary-section">
+
+        <h2>Order Summary</h2>
+
+        <div id="checkoutItems"></div>
+
+        <hr>
+
+        <h3 id="checkoutTotal">
+            Total: ₦0
+        </h3>
+
+       <button class="place-order-btn"
+onclick="window.location.href='payment.html'">
+
+    Proceed To Payment
+
+</button>
+
+    </div>
+
+</section>
+
+<script>
+
+function displayCheckout() {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let checkoutItems = document.getElementById("checkoutItems");
+
+    let total = 0;
+
+    checkoutItems.innerHTML = "";
+
+    cart.forEach(item => {
+
+        let itemTotal = item.price * item.qty;
+
+        total += itemTotal;
+
+        checkoutItems.innerHTML += `
+
+            <div class="summary-item">
+
+                <span>${item.name}</span>
+
+                <span>
+                    ₦${item.price} × ${item.qty}
+                </span>
+
+            </div>
+
+        `;
+    });
+
+    document.getElementById("checkoutTotal").innerText =
+    "Total: ₦" + total;
+}
+
+function placeOrder() {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if(cart.length === 0){
+
+        alert("Your cart is empty");
+
+        return;
+    }
+
+    localStorage.removeItem("cart");
+
+    window.location.href = "order-success.html";
+}
+
+displayCheckout();
+
+</script>
+
+</body>
+</html>
